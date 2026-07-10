@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dolce Pasta | Fine Dining &amp; Lounge — French &amp; Italian Restaurant in Pattaya</title>
+<meta name="description" content="Dolce Pasta is an intimate French &amp; Italian restaurant lounge in Pattaya, pairing the delicate techniques of French cuisine with the comforting flavours of Italy." />
+<link rel="canonical" href="https://dolcepasta.example.com/" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#080b14" />
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:site_name" content="Dolce Pasta" />
+<meta property="og:title" content="Dolce Pasta | Fine Dining &amp; Lounge" />
+<meta property="og:description" content="An intimate fusion of Italian soul and French refinement in the heart of Pattaya." />
+<meta property="og:url" content="https://dolcepasta.example.com/" />
+<meta property="og:image" content="https://dolcepasta.example.com/images/og-image.jpg" />
+<meta property="og:locale" content="en_US" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dolce Pasta | Fine Dining &amp; Lounge" />
+<meta name="twitter:description" content="An intimate fusion of Italian soul and French refinement in the heart of Pattaya." />
+<meta name="twitter:image" content="https://dolcepasta.example.com/images/og-image.jpg" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Italiana&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Dolce Pasta","description":"Intimate French & Italian restaurant lounge in Pattaya.","url":"https://dolcepasta.example.com","image":"https://dolcepasta.example.com/images/og-image.jpg","servesCuisine":["Italian","French","Mediterranean"],"priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"6/47 Moo 12, Soi Thep Prasit 6","addressLocality":"Pattaya","addressRegion":"Chonburi","postalCode":"20150","addressCountry":"TH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:30","closes":"22:30"}],"acceptsReservations":true,"sameAs":["https://instagram.com/dolcepastapattaya"]}
+</script>
+<style>
+:root{
+--navy-900:#080b14;--navy-800:#0b0f1a;--navy-700:#0f1524;--navy-600:#141b2e;
+--gold:#d4af37;--gold-bright:#e8c25a;--text:#eef1f6;--text-muted:#9aa3b7;--text-dim:#6f7891;
+--border:rgba(212,175,55,.28);--serif:'Playfair Display',Georgia,serif;--logo:'Italiana','Playfair Display',serif;
+--sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--maxw:1180px;--gutter:1.25rem;}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy-800);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;margin:0}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:4.5rem 0}
+.eyebrow{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.accent{color:var(--gold);font-style:italic}
+.text-muted{color:var(--text-muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.9rem 1.8rem;cursor:pointer;border:1px solid var(--gold);transition:all .25s ease;white-space:nowrap}
+.btn-solid{background:var(--gold);color:var(--navy-900)}
+.btn-solid:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+.btn-outline{background:transparent;color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:var(--navy-900)}
+.link-underline{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:.35rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav.is-scrolled{background:rgba(8,11,20,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(212,175,55,.15)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav__logo{font-family:var(--logo);font-size:1.55rem;color:var(--gold);font-style:italic}
+.nav__links,.nav__cta{display:none}
+.nav__toggle{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:9px;background:transparent;border:0;cursor:pointer}
+.nav__toggle span{display:block;height:2px;width:100%;background:var(--gold);transition:transform .3s,opacity .3s}
+.nav__toggle[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav__toggle[aria-expanded=true] span:nth-child(2){opacity:0}
+.nav__toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav__mobile{background:rgba(8,11,20,.98);backdrop-filter:blur(12px);border-top:1px solid var(--border)}
+.nav__mobile nav{display:flex;flex-direction:column;padding:1rem var(--gutter) 1.75rem}
+.nav__mobile a{padding:.95rem 0;font-size:1.05rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav__mobile a:hover{color:var(--gold)}
+.nav__mobile .btn{margin-top:1.4rem;border-bottom:1px solid var(--gold)}
+@media(min-width:900px){
+.nav__toggle,.nav__mobile{display:none}
+.nav__links{display:flex;gap:2rem;align-items:center}
+.nav__links a{font-size:.92rem;color:var(--text);position:relative;padding-bottom:4px}
+.nav__links a:hover,.nav__links a.is-active{color:var(--gold)}
+.nav__links a.is-active::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--gold)}
+.nav__cta{display:inline-flex;padding:.7rem 1.5rem;font-size:.72rem}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__scrim{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,11,20,.55),rgba(8,11,20,.35) 45%,rgba(8,11,20,.95)),linear-gradient(to right,rgba(8,11,20,.85),rgba(8,11,20,.35) 60%,rgba(8,11,20,.1))}
+.hero__content{position:relative;z-index:2;padding-top:68px}
+.hero__title{font-size:clamp(3rem,12vw,5.5rem);font-weight:800;letter-spacing:-.01em}
+.hero__lede{max-width:34rem;margin:1.75rem 0 2.25rem;color:var(--text-muted);font-size:1.05rem}
+.hero__actions{display:flex;flex-wrap:wrap;gap:1rem}
+@media(min-width:768px){.hero__scrim{background:linear-gradient(to right,rgba(8,11,20,.92),rgba(8,11,20,.55) 45%,rgba(8,11,20,.1)),linear-gradient(to bottom,rgba(8,11,20,.2) 60%,rgba(8,11,20,.85))}}
+/* about */
+.about{background:var(--navy-700)}
+.about__grid{display:grid;gap:2.5rem}
+.about__media{position:relative}
+.about__media::before{content:'';position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--border);z-index:0}
+.about__media img{position:relative;z-index:1;width:100%;height:340px;object-fit:cover}
+.about__title{font-size:clamp(2.1rem,7vw,3.1rem);margin-bottom:1.5rem}
+.about p{margin:0 0 1.15rem}
+.about__badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem;color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media(min-width:900px){.about__grid{grid-template-columns:1fr 1fr;align-items:center;gap:4rem}.about__media img{height:420px}}
+/* menu */
+.menu{background:var(--navy-800)}
+.menu__head{text-align:center;margin-bottom:3rem}
+.menu__title{font-size:clamp(2rem,7vw,3rem)}
+.menu__grid{display:grid;gap:2.5rem}
+.card__media{position:relative;overflow:hidden}
+.card__media img{width:100%;height:230px;object-fit:cover;transition:transform .5s}
+.card__badge{position:absolute;top:.85rem;right:.85rem;background:rgba(8,11,20,.85);color:var(--gold);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.4rem .7rem;border:1px solid var(--border)}
+.card__row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin:1.25rem 0 .6rem;padding-bottom:.6rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.card__name{font-size:1.3rem}
+.card__price{color:var(--gold);font-family:var(--serif);font-size:1.05rem;white-space:nowrap}
+.card__desc{color:var(--text-muted);font-style:italic;font-size:.95rem;margin:0}
+.menu__cta{text-align:center;margin-top:3rem}
+@media(hover:hover){.card:hover .card__media img{transform:scale(1.06)}}
+@media(min-width:768px){.menu__grid{grid-template-columns:repeat(3,1fr);gap:2rem}.card__media img{height:260px}}
+/* gallery */
+.gallery{background:var(--navy-700)}
+.gallery__head{margin-bottom:2.5rem}
+.gallery__title{font-size:clamp(2rem,7vw,3rem)}
+.gallery__sub{max-width:22rem;margin-top:.75rem}
+.gallery__grid{display:grid;gap:1rem;grid-template-columns:1fr}
+.gallery__item{margin:0;overflow:hidden}
+.gallery__item img{width:100%;height:260px;object-fit:cover;transition:transform .5s}
+@media(hover:hover){.gallery__item:hover img{transform:scale(1.05)}}
+@media(min-width:768px){.gallery__head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem}.gallery__sub{margin-top:0;text-align:right}.gallery__grid{grid-template-columns:1fr 1fr;grid-auto-rows:220px}.gallery__item.is-tall{grid-row:span 2}.gallery__item img{height:100%}}
+/* reservation */
+.res{background:var(--navy-800)}
+.res__card{max-width:760px;margin:0 auto;background:var(--navy-600);border:1px solid rgba(255,255,255,.06);padding:2.25rem 1.5rem 2.5rem}
+.res__head{text-align:center;margin-bottom:2.25rem}
+.res__title{font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:.6rem}
+.res__form{display:grid;grid-template-columns:1fr;gap:1.4rem}
+.field{display:flex;flex-direction:column}
+.field label{font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim);margin-bottom:.6rem}
+.field input,.field select{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.18);color:var(--text);font-family:var(--sans);font-size:.98rem;padding:.55rem 0}
+.field input::placeholder{color:var(--text-dim)}
+.field input:focus,.field select:focus{outline:none;border-bottom-color:var(--gold)}
+.field select option{background:var(--navy-700);color:var(--text)}
+.res__submit{margin-top:.75rem;align-items:center}
+.res__btn{width:100%;padding:1rem}
+.res__note{text-align:center;color:var(--text-dim);font-style:italic;font-size:.85rem;margin-top:1.75rem}
+@media(min-width:640px){.res__card{padding:3rem 3rem 3.25rem}.res__form{grid-template-columns:1fr 1fr;gap:1.6rem 2rem}.field--full{grid-column:1/-1}.res__btn{width:auto;min-width:320px;margin:0 auto}}
+/* footer */
+.footer{background:var(--navy-900);padding:3.5rem 0 1.75rem;border-top:1px solid rgba(212,175,55,.12)}
+.footer__grid{display:grid;gap:2rem}
+.footer__logo{font-family:var(--logo);font-style:italic;font-size:1.6rem;color:var(--gold)}
+.footer__tag{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-top:.5rem}
+.footer__h{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer__col p{margin:0 0 .5rem;font-size:.92rem}
+.footer__col a:hover{color:var(--gold)}
+.footer__hint{font-size:.82rem;color:var(--text-dim)}
+.footer__bar{margin-top:2.75rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.footer__bar p{font-size:.8rem;color:var(--text-dim);margin:0}
+@media(min-width:768px){.footer__grid{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav" id="site-nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="#home" aria-label="Dolce Pasta home">Dolce Pasta</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" class="is-active">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reservations">Reservations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#reservations" class="btn btn-solid nav__cta">Book a Table</a>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav__mobile" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a>
+      <a href="#reservations">Reservations</a><a href="#contact">Contact</a>
+      <a href="#reservations" class="btn btn-solid">Book a Table</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero__bg"><img src="images/hero.jpg" alt="Interior of Dolce Pasta restaurant lounge with warm lighting and the specials chalkboard" fetchpriority="high" /><div class="hero__scrim"></div></div>
+  <div class="container hero__content">
+    <p class="eyebrow">Fine Dining &amp; Lounge</p>
+    <h1 class="hero__title">Savor the<br /><span class="accent">Excellence</span> of<br />Europe</h1>
+    <p class="hero__lede">An intimate fusion of Italian soul and French refinement, set within the heart of our sophisticated restaurant lounge.</p>
+    <div class="hero__actions"><a href="#reservations" class="btn btn-solid">Book a Table</a><a href="#menu" class="btn btn-outline">View Menu</a></div>
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <div class="container about__grid">
+    <div class="about__media"><img src="images/about.jpg" alt="Sophisticated dining room and bar inside Dolce Pasta" loading="lazy" /></div>
+    <div>
+      <h2 class="about__title">French &amp; Italian<br /><span class="accent">Excellence</span></h2>
+      <p>Dolce Pasta is more than a restaurant; it is a celebration of culinary heritage. By marrying the delicate techniques of French cuisine with the robust, comforting flavours of Italy, we create an experience that speaks to the connoisseur in everyone.</p>
+      <p class="text-muted">Our lounge offers a serene escape, featuring a curated selection of fine wines and artisanal pasta dishes prepared with the freshest seasonal ingredients. Every detail, from the ambient lighting to the velvet textures, is designed to evoke a sense of quiet luxury.</p>
+      <p class="about__badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 22h8M12 22v-5M5 3h14l-1 7a6 6 0 0 1-12 0L5 3Z"/></svg>Premium Wine Selection</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu section" id="menu">
+  <div class="container">
+    <header class="menu__head"><p class="eyebrow">Seasonal Curation</p><h2 class="menu__title">The Culinary <span class="accent">Collection</span></h2></header>
+    <div class="menu__grid">
+      <article class="card">
+        <div class="card__media"><img src="images/menu-pizza.jpg" alt="Wood-fired salmon and arugula pizza at Dolce Pasta" loading="lazy" /><span class="card__badge">Featured</span></div>
+        <div class="card__row"><h3 class="card__name">Salmon &amp; Arugula Pizza</h3></div>
+        <p class="card__desc">Smoked salmon, wild arugula, red onion, capers, lemon zest, crema fresca.</p>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="images/menu-carbonara.jpg" alt="Spaghetti carbonara with crispy bacon and a silky egg yolk" loading="lazy" /></div>
+        <div class="card__row"><h3 class="card__name">Spaghetti Carbonara</h3></div>
+        <p class="card__desc">Spaghetti, crispy pancetta, Parmigiano, cracked black pepper, silky egg yolk.</p>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="images/menu-gnocchi.jpg" alt="Potato gnocchi in a rich tomato cream sauce with garlic bread" loading="lazy" /></div>
+        <div class="card__row"><h3 class="card__name">Gnocchi Sorrentina</h3></div>
+        <p class="card__desc">Pillowy potato gnocchi, rich tomato cream, chilli, Parmigiano, garlic bread.</p>
+      </article>
+    </div>
+    <div class="menu__cta"><a href="#reservations" class="link-underline">Download Full Menu</a></div>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <header class="gallery__head">
+      <div><p class="eyebrow">Atmosphere</p><h2 class="gallery__title">Inside Dolce <span class="accent">Pasta</span></h2></div>
+      <p class="gallery__sub text-muted">Explore the sophisticated interiors where French elegance meets Italian warmth.</p>
+    </header>
+    <div class="gallery__grid">
+      <figure class="gallery__item is-tall"><img src="images/gallery-chalkboard.jpg" alt="Dining area with sunflowers and the Gargantua specials chalkboard" loading="lazy" /></figure>
+      <figure class="gallery__item"><img src="images/gallery-bar.jpg" alt="The bar and wine wall inside Dolce Pasta" loading="lazy" /></figure>
+      <figure class="gallery__item"><img src="images/gallery-private.jpg" alt="Private dining table set with a red runner and candlelight" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<section class="res section" id="reservations">
+  <div class="container">
+    <div class="res__card">
+      <div class="res__head"><p class="eyebrow">Join Us</p><h2 class="res__title">Make a Reservation</h2><p class="text-muted">Please complete the form below to secure your experience.</p></div>
+      <form class="res__form" action="#" method="post" novalidate>
+        <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required /></div>
+        <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required /></div>
+        <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required /></div>
+        <div class="field"><label for="time">Time</label><select id="time" name="time"><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option></select></div>
+        <div class="field"><label for="guests">Guests</label><select id="guests" name="guests"><option>1 Person</option><option selected>2 People</option><option>3 People</option><option>4 People</option><option>5 People</option><option>6+ People</option></select></div>
+        <div class="field"><label for="occasion">Occasion (optional)</label><input id="occasion" name="occasion" type="text" placeholder="Birthday, anniversary…" /></div>
+        <div class="field field--full res__submit"><button type="submit" class="btn btn-solid res__btn">Confirm Reservation</button></div>
+      </form>
+      <p class="res__note">For parties larger than 10, please call our concierge directly.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="container footer__grid">
+    <div><a href="#home" class="footer__logo">Dolce Pasta</a><p class="footer__tag text-muted">Fine Dining &amp; Lounge</p></div>
+    <div class="footer__col"><h3 class="footer__h">Visit</h3><p class="text-muted">6/47 Moo 12, Soi Thep Prasit 6<br />Pattaya, Chonburi 20150<br /><span class="footer__hint">600m from Thepprasit Market</span></p></div>
+    <div class="footer__col"><h3 class="footer__h">Hours</h3><p class="text-muted">Tuesday – Sunday, 12:30 – 22:30<br /><span class="footer__hint">Closed Mondays</span></p></div>
+    <div class="footer__col"><h3 class="footer__h">Follow &amp; Order</h3>
+      <p class="text-muted"><a href="https://instagram.com/dolcepastapattaya" target="_blank" rel="noopener noreferrer me">Instagram @dolcepastapattaya</a></p>
+      <p class="text-muted"><a href="https://facebook.com/dolcepastapattaya" target="_blank" rel="noopener noreferrer me">Facebook @dolcepastapattaya</a></p>
+      <p class="text-muted"><a href="https://www.tiktok.com/@dolcepastapattaya" target="_blank" rel="noopener noreferrer me">TikTok @dolcepastapattaya</a></p>
+      <p class="text-muted"><a href="#" target="_blank" rel="noopener noreferrer">Order on GrabFood →</a></p>
+    </div>
+  </div>
+  <div class="container footer__bar"><p>© <span id="yr"></span> Dolce Pasta. All rights reserved.</p></div>
+</footer>
+
+<script>
+var toggle=document.getElementById('nav-toggle'),menu=document.getElementById('mobile-menu'),header=document.getElementById('site-nav');
+toggle&&toggle.addEventListener('click',function(){var o=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!o));toggle.setAttribute('aria-label',o?'Open menu':'Close menu');o?menu.setAttribute('hidden',''):menu.removeAttribute('hidden');});
+menu&&menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');menu.setAttribute('hidden','');});});
+function onScroll(){window.scrollY>40?header.classList.add('is-scrolled'):header.classList.remove('is-scrolled');}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 <meta name="description" content="Dolce Pasta is an intimate French &amp; Italian restaurant lounge in Pattaya, pairing the delicate techniques of French cuisine with the comforting flavours of Italy." />
 <link rel="canonical" href="https://dolcepasta.example.com/" />
 <meta name="robots" content="index, follow" />
-<meta name="theme-color" content="#080b14" />
+<meta name="theme-color" content="#f7f3ea" />
 <!-- Open Graph -->
 <meta property="og:type" content="restaurant" />
 <meta property="og:site_name" content="Dolce Pasta" />
@@ -30,9 +30,9 @@
 </script>
 <style>
 :root{
---navy-900:#080b14;--navy-800:#0b0f1a;--navy-700:#0f1524;--navy-600:#141b2e;
---gold:#d4af37;--gold-bright:#e8c25a;--text:#eef1f6;--text-muted:#9aa3b7;--text-dim:#6f7891;
---border:rgba(212,175,55,.28);--serif:'Playfair Display',Georgia,serif;--logo:'Italiana','Playfair Display',serif;
+--navy-900:#211d17;--navy-800:#f7f3ea;--navy-700:#efe9db;--navy-600:#ffffff;
+--navy-500:#e7dfce;--gold:#6d7358;--gold-bright:#818968;--text:#2c2822;--text-muted:#6a6255;--text-dim:#9a9280;
+--border:rgba(109,115,88,.30);--serif:'Playfair Display',Georgia,serif;--logo:'Italiana','Playfair Display',serif;
 --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--maxw:1180px;--gutter:1.25rem;}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -149,6 +149,36 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;margin:0}
 .footer__bar p{font-size:.8rem;color:var(--text-dim);margin:0}
 @media(min-width:768px){.footer__grid{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ===== SAGE / CREAM LIGHT THEME ===== */
+.btn-solid{color:#f7f3ea}
+.btn-outline:hover{color:#f7f3ea}
+.hero__scrim{background:linear-gradient(to bottom,rgba(33,29,23,.35),rgba(33,29,23,.25) 45%,rgba(33,29,23,.82)),linear-gradient(to right,rgba(33,29,23,.72),rgba(33,29,23,.3) 60%,rgba(33,29,23,.08))}
+@media(min-width:768px){.hero__scrim{background:linear-gradient(to right,rgba(33,29,23,.8),rgba(33,29,23,.45) 45%,rgba(33,29,23,.1)),linear-gradient(to bottom,rgba(33,29,23,.15) 60%,rgba(33,29,23,.75))}}
+.hero__title{color:#f9f6ef}
+.hero__lede{color:#e7e1d4}
+.hero .eyebrow{color:#cbb98b}
+.nav__logo,.nav__links a{color:#f7f3ea}
+.nav.is-scrolled{background:rgba(247,243,234,.96);box-shadow:0 1px 0 rgba(44,40,34,.10)}
+.nav.is-scrolled .nav__logo{color:var(--gold)}
+.nav.is-scrolled .nav__links a{color:var(--text)}
+.nav.is-scrolled .nav__links a:hover,.nav.is-scrolled .nav__links a.is-active{color:var(--gold)}
+.nav__toggle span{background:#f7f3ea}
+.nav.is-scrolled .nav__toggle span{background:var(--gold)}
+.nav__mobile{background:rgba(247,243,234,.98);border-top:1px solid var(--border)}
+.nav__mobile a{color:var(--text);border-bottom:1px solid rgba(44,40,34,.08)}
+.card__badge{background:rgba(247,243,234,.92);color:var(--gold);border-color:var(--border)}
+.card__row{border-bottom:1px solid rgba(44,40,34,.12)}
+.res__card{background:#fff;border:1px solid var(--border);box-shadow:0 24px 60px rgba(44,40,34,.07)}
+.field input,.field select{border-bottom:1px solid rgba(44,40,34,.22);color:var(--text)}
+.field select option{background:#fff;color:var(--text)}
+.footer{background:#211d17;border-top:1px solid rgba(109,115,88,.35)}
+.footer__logo,.footer__h{color:#c3c6ac}
+.footer .text-muted,.footer__col p{color:#bcb5a6}
+.footer__col a:hover{color:#c3c6ac}
+.footer__hint,.footer__bar p{color:#8f887a}
+.footer__bar{border-top:1px solid rgba(255,255,255,.08)}
+
 </style>
 </head>
 <body>
